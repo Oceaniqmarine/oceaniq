@@ -1,0 +1,27 @@
+<!-- public/__forms.html — static skeleton for Netlify build-time form detection -->
+<html>
+  <body>
+    <form name="boat-builder-lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="boat-builder-lead" />
+      <input name="name" />
+      <input name="email" />
+      <select name="boat-type">
+        <option value="Small Boat (Under 20ft)">Small Boat</option>
+        <option value="Fishing Boat (20–30ft)">Fishing Boat</option>
+        <option value="Cruiser (30–45ft)">Cruiser</option>
+        <option value="Yacht (45ft+)">Yacht</option>
+        <option value="Commercial / Work Vessel">Commercial</option>
+      </select>
+      <input type="checkbox" name="features" value="Smart Monitoring" />
+      <input type="checkbox" name="features" value="Automation" />
+      <input type="checkbox" name="features" value="Security & Alerts" />
+      <input type="checkbox" name="features" value="AI Diagnostics" />
+      <input type="checkbox" name="features" value="Navigation Assist" />
+      <input type="radio" name="package-tier" value="Smart Start" />
+      <input type="radio" name="package-tier" value="Smart Control" />
+      <input type="radio" name="package-tier" value="AI Captain" />
+      <textarea name="notes"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
