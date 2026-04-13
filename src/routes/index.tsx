@@ -741,8 +741,7 @@ function PackagesSection() {
     highlight: false,
   },
 ]
-    },
-  ]
+  
 
   return (
     <section
