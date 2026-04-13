@@ -693,8 +693,6 @@ function BoatBuilderSection() {
 function PackagesSection() {
   const packages = [
     {
-      const packages = [
-  {
     emoji: '🟢',
     name: 'Starter',
     tagline: 'Smart Monitoring for Your Vessel',
