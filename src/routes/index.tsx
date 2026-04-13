@@ -698,7 +698,7 @@ function PackagesSection() {
     emoji: '🟢',
     name: 'Starter',
     tagline: 'Smart Monitoring for Your Vessel',
-    price: 'Contact for pricing',
+    price: '$800-$1500',
     tier: 'entry',
     color: '#10b981',
     features: [
@@ -714,7 +714,7 @@ function PackagesSection() {
     emoji: '🔵',
     name: 'Pro',
     tagline: 'Full Control & Automation',
-    price: 'Contact for pricing',
+    price: '$1,500-$3,500',
     tier: 'mid',
     color: '#0ea5e9',
     features: [
@@ -730,7 +730,7 @@ function PackagesSection() {
     emoji: '⚡',
     name: 'AI Premium',
     tagline: 'Voice-Controlled Smart Vessel',
-    price: 'Contact for pricing',
+    price: '$3,500 and up',
     tier: 'top',
     color: '#8b5cf6',
     features: [
