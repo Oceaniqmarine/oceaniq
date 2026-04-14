@@ -50,10 +50,10 @@ function BoatBuilderForm() {
   }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    alert("Form is firing!");
-    setSubmitting(true)
-    setError(null)
+  e.preventDefault();
+  alert("Form is firing!");
+  // rest of code...
+};
 
     const formData = new FormData(e.currentTarget)
 
@@ -368,7 +368,7 @@ const response = await fetch("/.netlify/functions/form-submit", {
                 ) : (
                   <>
                     <Send size={18} />
-                    Submit Build Request
+                    TEST BUTTON
                   </>
                 )}
               </button>
