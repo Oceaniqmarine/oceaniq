@@ -49,35 +49,40 @@ function BoatBuilderForm() {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   alert("Form is firing!");
-  // rest of code...
+  setSubmitting(true);
+  setError(null);
+
+  try {
+    const formData = new FormData(e.currentTarget);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    const response = await fetch("/.netlify/functions/form-submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    setError("Something went wrong. Please try again.");
+  } finally {
+    setSubmitting(false);
+  }
 };
-
-    const formData = new FormData(e.currentTarget)
-
-    try {
-      const data = {
-  name: formData.get("name"),
-  email: formData.get("email"),
-  message: formData.get("message")
-};
-
-const response = await fetch("/.netlify/functions/form-submit", {
-  method: "POST",
-  body: JSON.stringify(data)
-});
-
-      if (response.ok) {
-        setSubmitted(true)
-      } else {
-        setError('Something went wrong. Please try again.')
-      }
-    } catch {
-      setError('Something went wrong. Please try again.')
-    } finally {
-      setSubmitting(false)
     }
   }
 
