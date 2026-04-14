@@ -49,7 +49,7 @@ function BoatBuilderForm() {
     })
   }
 
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+const handleSubmit = async (e: any ) => {
   e.preventDefault();
   alert("Form is firing!");
   setSubmitting(true);
@@ -362,18 +362,12 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
               {/* Submit */}
               <button
-                type="submit"
+               type="button"
+                onClick={handleSubmit}
                 disabled={submitting}
-                className="btn-primary w-full flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-white text-base disabled:opacity-60 disabled:cursor-not-allowed"
-              >
-                {submitting ? (
-                  'Submitting...'
-                ) : (
-                  <>
-                    <Send size={18} />
-                    TEST BUTTON
-                  </>
-                )}
+                className="btn-primary w-full flex items-center justify-center gap-2"
+                >
+                TEST SUBMIT
               </button>
             </form>
           )}
