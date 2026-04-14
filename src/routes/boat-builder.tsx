@@ -83,8 +83,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     setSubmitting(false);
   }
 };
-    }
-  }
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#0a0f1e', color: '#e2e8f0' }}>
