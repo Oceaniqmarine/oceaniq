@@ -163,10 +163,6 @@ const response = await fetch("/.netlify/functions/form-submit", {
           ) : (
             /* Form */
             <form
-              name="boat-builder-lead"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="rounded-2xl p-8 md:p-10 space-y-6"
               style={{
@@ -174,13 +170,7 @@ const response = await fetch("/.netlify/functions/form-submit", {
                 border: '1px solid rgba(14, 165, 233, 0.2)',
                 boxShadow: '0 0 60px rgba(14, 165, 233, 0.05)',
               }}
-            >
-              <input type="hidden" name="form-name" value="boat-builder-lead" />
-              <p style={{ display: 'none' }}>
-                <label>
-                  Don't fill this out: <input name="bot-field" />
-                </label>
-              </p>
+         >
 
               {/* Name */}
               <div>
