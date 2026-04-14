@@ -51,6 +51,7 @@ function BoatBuilderForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    alert("Form is firing!");
     setSubmitting(true)
     setError(null)
 
