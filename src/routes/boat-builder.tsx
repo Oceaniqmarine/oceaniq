@@ -127,7 +127,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               className="text-xs font-semibold uppercase tracking-widest mb-3"
               style={{ color: '#0ea5e9' }}
             >
-              Custom Build Inquiry
+              Test Page 123
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Start Your <span className="text-gradient">Custom Build</span>
