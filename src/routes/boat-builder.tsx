@@ -51,7 +51,6 @@ function BoatBuilderForm() {
 
 const handleSubmit = async (e: any ) => {
   e.preventDefault();
-  alert("Form is firing!");
   setSubmitting(true);
   setError(null);
 
