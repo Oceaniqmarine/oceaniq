@@ -1154,7 +1154,7 @@ function ContactSection() {
       Design your setup in minutes and get a custom Oceaniq plan.
     </p>
     <a
-      href="/boatbuilder"
+      href="/boat-builder"
       className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-semibold"
     >
       Start My Custom Build
