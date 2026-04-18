@@ -1146,100 +1146,21 @@ function ContactSection() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-sm font-medium mb-2" style={{ color: '#94a3b8' }}>
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Captain James"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl text-white text-sm outline-none transition-all duration-200"
-                    style={{
-                      background: 'rgba(14, 165, 233, 0.05)',
-                      border: '1px solid rgba(14, 165, 233, 0.2)',
-                    }}
-                    onFocus={(e) => (e.target.style.borderColor = '#0ea5e9')}
-                    onBlur={(e) => (e.target.style.borderColor = 'rgba(14, 165, 233, 0.2)')}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2" style={{ color: '#94a3b8' }}>
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    placeholder="you@example.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl text-white text-sm outline-none transition-all duration-200"
-                    style={{
-                      background: 'rgba(14, 165, 233, 0.05)',
-                      border: '1px solid rgba(14, 165, 233, 0.2)',
-                    }}
-                    onFocus={(e) => (e.target.style.borderColor = '#0ea5e9')}
-                    onBlur={(e) => (e.target.style.borderColor = 'rgba(14, 165, 233, 0.2)')}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2" style={{ color: '#94a3b8' }}>
-                  Boat Type
-                </label>
-                <select
-                  required
-                  value={formData.boatType}
-                  onChange={(e) => setFormData({ ...formData, boatType: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200"
-                  style={{
-                    background: 'rgba(14, 165, 233, 0.05)',
-                    border: '1px solid rgba(14, 165, 233, 0.2)',
-                    color: formData.boatType ? 'white' : '#475569',
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = '#0ea5e9')}
-                  onBlur={(e) => (e.target.style.borderColor = 'rgba(14, 165, 233, 0.2)')}
-                >
-                  <option value="" style={{ background: '#0a0f1e' }}>Select your boat type</option>
-                  {['Small Boat (Under 20ft)', 'Fishing Boat (20–30ft)', 'Cruiser (30–45ft)', 'Yacht (45ft+)', 'Commercial Vessel'].map((o) => (
-                    <option key={o} value={o} style={{ background: '#0a0f1e' }}>{o}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2" style={{ color: '#94a3b8' }}>
-                  What are you looking for?
-                </label>
-                <textarea
-                  required
-                  rows={4}
-                  placeholder="Tell us about your vessel, current challenges, and what you'd like to achieve with Oceaniq..."
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl text-white text-sm outline-none transition-all duration-200 resize-none"
-                  style={{
-                    background: 'rgba(14, 165, 233, 0.05)',
-                    border: '1px solid rgba(14, 165, 233, 0.2)',
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = '#0ea5e9')}
-                  onBlur={(e) => (e.target.style.borderColor = 'rgba(14, 165, 233, 0.2)')}
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="btn-primary w-full py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-2"
-              >
-                Send My Request <ArrowRight size={18} />
-              </button>
-            </form>
-          )}
+  <div className="text-center mt-10">
+    <h2 className="text-2xl font-bold text-white mb-4">
+      Ready to build your smart vessel system?
+    </h2>
+    <p className="text-gray-300 mb-6">
+      Design your setup in minutes and get a custom Oceaniq plan.
+    </p>
+    <a
+      href="/boatbuilder"
+      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-semibold"
+    >
+      Start My Custom Build
+    </a>
+  </div>
+    )} 
         </div>
       </div>
     </section>
