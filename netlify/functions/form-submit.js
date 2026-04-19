@@ -27,7 +27,7 @@ export async function handler(event) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        from: "OCEANIQ <onboarding@resend.dev>",
+        from: "OCEANIQ <oceaniqsystems@proton.me>",
         to: ["oceaniqsystems@proton.me"],
         subject: "New OCEANIQ Lead",
         html: `
